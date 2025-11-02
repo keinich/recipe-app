@@ -1,0 +1,226 @@
+/* Table styles */
+.recipe-table-container {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow-x: auto; /* Ermöglicht horizontales Scrollen bei kleinen Bildschirmen */
+}
+
+.recipe-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Verhindert zu schmale Tabelle */
+}
+
+.recipe-table th,
+.recipe-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.recipe-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+.recipe-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Column widths - angepasst für die neue Struktur */
+.recipe-table .col-name {
+  width: 20%;
+  min-width: 150px;
+}
+
+.recipe-table .col-categories {
+  width: 25%;
+  min-width: 150px;
+}
+
+.recipe-table .col-time {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.recipe-table .col-calories {
+  width: 10%;
+  white-space: nowrap;
+}
+
+.recipe-table .col-difficulty {
+  width: 10%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.recipe-table .col-price {
+  width: 10%;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.recipe-table .col-actions {
+  width: 15%;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Recipe name cell */
+.recipe-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px;
+}
+
+.recipe-table-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Recipe details cell */
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+/* Zeigt maximal 3 Tags an und versteckt den Rest */
+.detail-tags .recipe-tag:nth-child(n + 4) {
+  display: none;
+}
+
+/* "+X mehr" Indikator für versteckte Tags */
+.detail-tags.has-more::after {
+  content: "+...";
+  font-size: 0.8em;
+  color: #777;
+  margin-left: 4px;
+}
+
+/* Recipe actions cell - Icon buttons */
+.recipe-actions-cell {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Icon buttons styling */
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-icon:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon:active {
+  transform: scale(0.95);
+}
+
+/* Direct icon styling for buttons */
+.view-icon {
+  background-color: #4285f4; /* Google Blue */
+}
+.view-icon::after {
+  content: "👁️";
+}
+
+.edit-icon {
+  background-color: #34a853; /* Google Green */
+}
+.edit-icon::after {
+  content: "✏️";
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Toggle view buttons */
+.view-toggle .btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Direct icon styling for view toggle */
+.cards-icon::after {
+  content: "🗂️";
+  font-size: 16px;
+}
+
+.table-icon::after {
+  content: "📋";
+  font-size: 16px;
+}
+
+/* Recipe tag styling - angepasst für Tabellenzellen */
+.recipe-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+/* Spezielle Tag-Farben für Schwierigkeit und Preis */
+td.col-difficulty .recipe-tag {
+  background-color: #e1f5fe; /* Leichtes Blau */
+  color: #0277bd;
+}
+
+td.col-price .recipe-tag {
+  background-color: #e8f5e9; /* Leichtes Grün */
+  color: #2e7d32;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .toggle-text {
+    display: none;
+  }
+
+  .recipe-table {
+    min-width: 700px;
+  }
+}
+
+/* Mobile Ansicht beibehalten (jetzt mit horizontalem Scrollen) */
+@media (max-width: 768px) {
+  .recipe-table {
+    min-width: 800px;
+  }
+}
