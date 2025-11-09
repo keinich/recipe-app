@@ -845,51 +845,72 @@
     "id": "17",
     "name": "Ofenkartoffeln Brokkoli Dip Putenbrustfilet",
     "description": "Putenbrust mit Ofenkartoffeln, Brokkoli und Dip",
-    "image": "",
+    "image": "https://marleyspoon.com/media/recipes/67735/main_photos/large/glasierte_hahnchenfilets_brokkoli-178ffff5e0489e254baf7f23fc7424c6.jpeg",
     "ingredients": [
       {
         "name": "Putenbrustfilet",
-        "amount": "600",
+        "amount": "800",
         "unit": "g",
         "category": "Fleisch"
       },
       {
         "name": "Kartoffeln",
-        "amount": "800",
+        "amount": "1000",
         "unit": "g",
         "category": "Gemüse"
       },
       {
         "name": "Brokkoli",
-        "amount": "400",
+        "amount": "1000",
         "unit": "g",
         "category": "Gemüse"
       },
       {
-        "name": "Sauerrahm",
-        "amount": "200",
+        "name": "Magerquark",
+        "amount": "500",
         "unit": "g",
         "category": "Milchprodukte"
       },
       {
-        "name": "Kräuter",
+        "name": "Kräuter TK",
         "amount": "1",
         "unit": "Bund",
-        "category": "Kräuter"
+        "category": "Tiefkühl"
       },
       {
-        "name": "Olivenöl",
-        "amount": "3",
+        "name": "Creme Fraiche",
+        "amount": "100",
+        "unit": "g",
+        "category": "Milchprodukte"
+      },
+      {
+        "name": "Öl",
+        "amount": "4",
         "unit": "EL",
         "category": "Öle"
+      },
+      {
+        "name": "Gewürze",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Gewürze"
       }
     ],
-    "instructions": [],
+    "instructions": ["1"],
     "prepTime": 15,
-    "cookTime": 40,
-    "servings": 4,
-    "calories": 450,
-    "categories": ["Hauptgericht", "Gesund", "Gebacken"],
+    "cookTime": 30,
+    "servings": 3,
+    "calories": 2640,
+    "categories": [
+      "Hauptgericht",
+      "Gesund",
+      "Gebacken",
+      "Geflügel",
+      "Fitness",
+      "Fleisch",
+      "Ofen",
+      "Deutsch"
+    ],
     "difficulty": "Einfach",
     "price": "Mittel",
     "taste": "Herzhaft"
@@ -1189,65 +1210,6 @@
     "taste": "Herzhaft"
   },
   {
-    "id": "24",
-    "name": "Stir Fry (Mongolian)",
-    "description": "Mongolisches Pfannengericht mit Gemüse und Fleisch",
-    "image": "",
-    "ingredients": [
-      {
-        "name": "Rindfleisch",
-        "amount": "500",
-        "unit": "g",
-        "category": "Fleisch"
-      },
-      {
-        "name": "Paprika",
-        "amount": "2",
-        "unit": "Stück",
-        "category": "Gemüse"
-      },
-      {
-        "name": "Zwiebeln",
-        "amount": "2",
-        "unit": "Stück",
-        "category": "Gemüse"
-      },
-      {
-        "name": "Sojasauce",
-        "amount": "100",
-        "unit": "ml",
-        "category": "Saucen"
-      },
-      {
-        "name": "Ingwer",
-        "amount": "20",
-        "unit": "g",
-        "category": "Gewürze"
-      },
-      {
-        "name": "Knoblauch",
-        "amount": "3",
-        "unit": "Zehen",
-        "category": "Gemüse"
-      },
-      {
-        "name": "Reis",
-        "amount": "300",
-        "unit": "g",
-        "category": "Getreide"
-      }
-    ],
-    "instructions": [],
-    "prepTime": 15,
-    "cookTime": 20,
-    "servings": 4,
-    "calories": 480,
-    "categories": ["Hauptgericht", "Asiatisch", "Scharf"],
-    "difficulty": "Mittel",
-    "price": "Mittel",
-    "taste": "Würzig"
-  },
-  {
     "id": "25",
     "name": "Lachsbites Kürbis Salat",
     "description": "Lachs-Häppchen mit Kürbis und Salat",
@@ -1392,48 +1354,60 @@
     "id": "28",
     "name": "Scholle Salat",
     "description": "Gebratene Scholle mit frischem Salat",
-    "image": "",
+    "image": "https://static.tegut.com/uploads/_processed_/6/c/csm_Mix-Salat-mit-Schollenfilet-KW26_2_636x385_a6035508bd.webp",
     "ingredients": [
       {
         "name": "Scholle",
-        "amount": "600",
+        "amount": "750",
         "unit": "g",
         "category": "Fisch"
       },
       {
-        "name": "Salat gemischt",
-        "amount": "300",
-        "unit": "g",
+        "name": "Salat",
+        "amount": "2",
+        "unit": "Stück",
         "category": "Gemüse"
       },
       {
-        "name": "Butter",
-        "amount": "50",
-        "unit": "g",
-        "category": "Milchprodukte"
-      },
-      {
         "name": "Zitrone",
-        "amount": "1",
+        "amount": "3",
         "unit": "Stück",
-        "category": "Früchte"
+        "category": "Gemüse"
       },
       {
-        "name": "Petersilie",
+        "name": "Essig",
+        "amount": "1 ",
+        "unit": "EL",
+        "category": "Öle"
+      },
+      {
+        "name": "Olivenöl",
         "amount": "1",
-        "unit": "Bund",
-        "category": "Kräuter"
+        "unit": "EL",
+        "category": "Öle"
       }
     ],
-    "instructions": [],
-    "prepTime": 15,
+    "instructions": ["1"],
+    "prepTime": 10,
     "cookTime": 20,
-    "servings": 4,
-    "calories": 380,
-    "categories": ["Hauptgericht", "Fisch", "Leicht"],
+    "servings": 2,
+    "calories": 1600,
+    "categories": [
+      "Hauptgericht",
+      "Fisch",
+      "Leicht",
+      "Low Carb",
+      "Schnell",
+      "Gesund",
+      "Fitness",
+      "Ofen",
+      "Protein",
+      "Deutsch",
+      "Salat"
+    ],
     "difficulty": "Einfach",
-    "price": "Mittel",
-    "taste": "Herzhaft"
+    "price": "Günstig",
+    "taste": "Sauer"
   },
   {
     "id": "29",
@@ -1839,17 +1813,17 @@
     "id": "37",
     "name": "Feldsalat Lachs",
     "description": "Feldsalat mit gebratenem Lachs",
-    "image": "",
+    "image": "https://rezept-db.womenshealth.de/image/rezept-db/fullWidthMobile/Lachs-auf-Salat.jpg.webp",
     "ingredients": [
       {
         "name": "Feldsalat",
-        "amount": "300",
+        "amount": "500",
         "unit": "g",
         "category": "Gemüse"
       },
       {
         "name": "Lachsfilet",
-        "amount": "500",
+        "amount": "600",
         "unit": "g",
         "category": "Fisch"
       },
@@ -1860,7 +1834,7 @@
         "category": "Nüsse"
       },
       {
-        "name": "Balsamico",
+        "name": "Essig",
         "amount": "3",
         "unit": "EL",
         "category": "Öle"
@@ -1870,14 +1844,48 @@
         "amount": "4",
         "unit": "EL",
         "category": "Öle"
+      },
+      {
+        "name": "Senf",
+        "amount": "1",
+        "unit": "EL",
+        "category": "Saucen"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Salatkräuter TK",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Tiefkühl"
+      },
+      {
+        "name": "Protein William",
+        "amount": "1",
+        "unit": "Stück",
+        "category": ""
       }
     ],
-    "instructions": [],
+    "instructions": ["Kochen"],
     "prepTime": 15,
     "cookTime": 15,
-    "servings": 4,
-    "calories": 420,
-    "categories": ["Salat", "Fisch", "Leicht"],
+    "servings": 3,
+    "calories": 1300,
+    "categories": [
+      "Salat",
+      "Fisch",
+      "Leicht",
+      "Protein",
+      "Hauptgericht",
+      "Low Carb",
+      "Schnell",
+      "Gesund",
+      "Fitness"
+    ],
     "difficulty": "Einfach",
     "price": "Mittel",
     "taste": "Frisch"
@@ -2855,27 +2863,27 @@
   },
   {
     "id": "57",
-    "name": "Nudeln Pesto Hähnchenbrustfilet/Pbf",
+    "name": "Nudeln Pesto Hähnchenbrustfilet/Putenbrustfilet",
     "description": "Nudeln mit Pesto und Hähnchen oder Putenbrust",
-    "image": "",
+    "image": "https://www.justspices.de/media/recipe/Roter_Pesto_Mix_Cremige_Pasta_mit_Mozzarella_und_Haehnchen-19.jpg",
     "ingredients": [
       {
         "name": "Nudeln",
         "amount": "400",
         "unit": "g",
-        "category": "Teigwaren"
+        "category": "Nudeln"
       },
       {
         "name": "Hähnchenbrustfilet oder Putenbrustfilet",
-        "amount": "600",
+        "amount": "800",
         "unit": "g",
         "category": "Fleisch"
       },
       {
-        "name": "Pesto",
-        "amount": "150",
+        "name": "Getrocknete Tomaten",
+        "amount": "100",
         "unit": "g",
-        "category": "Saucen"
+        "category": "Gemüse"
       },
       {
         "name": "Parmesan",
@@ -2884,20 +2892,39 @@
         "category": "Milchprodukte"
       },
       {
-        "name": "Pinienkerne",
+        "name": "Walnüsse",
         "amount": "30",
         "unit": "g",
         "category": "Nüsse"
+      },
+      {
+        "name": "Ricotta",
+        "amount": "200",
+        "unit": "g",
+        "category": "Milchprodukte"
+      },
+      {
+        "name": "Basilikum TK",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Tiefkühl"
       }
     ],
-    "instructions": [],
+    "instructions": ["1"],
     "prepTime": 10,
-    "cookTime": 20,
-    "servings": 4,
-    "calories": 520,
-    "categories": ["Hauptgericht", "Italienisch", "Schnell"],
-    "difficulty": "Einfach",
-    "price": "Mittel",
+    "cookTime": 15,
+    "servings": 3,
+    "calories": 2900,
+    "categories": [
+      "Hauptgericht",
+      "Italienisch",
+      "Schnell",
+      "Geflügel",
+      "Protein",
+      "Pasta"
+    ],
+    "difficulty": "Mittel",
+    "price": "Günstig",
     "taste": "Würzig"
   },
   {
@@ -3246,5 +3273,207 @@
     "difficulty": "Einfach",
     "price": "Mittel",
     "taste": "Würzig"
+  },
+  {
+    "name": "Gemüsepfanne + Feta",
+    "description": "",
+    "image": "https://www.leckerschmecker.me/wp-content/uploads/sites/6/2024/09/gemuesepfanne-mit-feta.png",
+    "prepTime": 10,
+    "cookTime": 20,
+    "servings": 3,
+    "calories": 968,
+    "difficulty": "Einfach",
+    "price": "Günstig",
+    "taste": "Herzhaft",
+    "categories": [
+      "Hauptgericht",
+      "Vegetarisch",
+      "Gesund",
+      "Low Carb",
+      "Schnell"
+    ],
+    "ingredients": [
+      {
+        "name": "Tomaten",
+        "amount": "7",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": "7",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": "2",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Zucchini",
+        "amount": "2",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Lauch",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Karotten",
+        "amount": "2",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Feta",
+        "amount": "400",
+        "unit": "g",
+        "category": "Milchprodukte"
+      }
+    ],
+    "instructions": ["Kochen"],
+    "id": "1762086201303"
+  },
+  {
+    "name": "Stir Fry Mongolian",
+    "description": "",
+    "image": "https://natashaskitchen.com/wp-content/uploads/2024/02/Mongolian-Beef-3.jpg",
+    "prepTime": 45,
+    "cookTime": 20,
+    "servings": 3,
+    "calories": 3353,
+    "difficulty": "Mittel",
+    "price": "Gehoben",
+    "taste": "Herzhaft",
+    "categories": ["Hauptgericht", "Fleisch", "Asiatisch", "Reis"],
+    "ingredients": [
+      {
+        "name": "Rindersteak",
+        "amount": "900",
+        "unit": "g",
+        "category": "Fleisch"
+      },
+      {
+        "name": "Ei",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Eier"
+      },
+      {
+        "name": "Maisstärke",
+        "amount": "3",
+        "unit": "TL",
+        "category": "Backwaren"
+      },
+      {
+        "name": "Backpulver",
+        "amount": "1,5",
+        "unit": "TL",
+        "category": "Backwaren"
+      },
+      {
+        "name": "Zucker",
+        "amount": "1,5",
+        "unit": "TL",
+        "category": "Backwaren"
+      },
+      {
+        "name": "Salz",
+        "amount": "1",
+        "unit": "TL",
+        "category": "Gewürze"
+      },
+      {
+        "name": "Eiswasser",
+        "amount": "340",
+        "unit": "ml",
+        "category": ""
+      },
+      {
+        "name": "Brauner Zucker",
+        "amount": "100",
+        "unit": "g",
+        "category": "Backwaren"
+      },
+      {
+        "name": "Rinderfond",
+        "amount": "250",
+        "unit": "ml",
+        "category": "Gewürze"
+      },
+      {
+        "name": "Metaxa Wein",
+        "amount": "4",
+        "unit": "EL",
+        "category": ""
+      },
+      {
+        "name": "Sojasauce",
+        "amount": "120",
+        "unit": "ml",
+        "category": "Gewürze"
+      },
+      {
+        "name": "Sojasauce dunkel",
+        "amount": "4",
+        "unit": "EL",
+        "category": "Gewürze"
+      },
+      {
+        "name": "Austernsauce",
+        "amount": "2",
+        "unit": "EL",
+        "category": "Gewürze"
+      },
+      {
+        "name": "Sesamöl",
+        "amount": "2",
+        "unit": "EL",
+        "category": "Öle"
+      },
+      {
+        "name": "Zwiebeln",
+        "amount": "4",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Knoblauch",
+        "amount": "4",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Ingwer",
+        "amount": "1",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Getrocknete Chilis",
+        "amount": "6",
+        "unit": "Stück",
+        "category": "Gemüse"
+      },
+      {
+        "name": "Milchreis",
+        "amount": "300",
+        "unit": "g",
+        "category": "Reis"
+      },
+      {
+        "name": "Brokkoli",
+        "amount": "1000",
+        "unit": "g",
+        "category": "Gemüse"
+      }
+    ],
+    "instructions": ["1"],
+    "id": "1762088624878"
   }
 ]

@@ -1,4 +1,10 @@
 import React, { createContext, useState, useEffect } from "react";
+// Utility to load recipes from public/recipes.json
+const fetchRecipesJson = async () => {
+  const response = await fetch("/recipes.json");
+  if (!response.ok) throw new Error("Fehler beim Laden der Rezepte");
+  return await response.json();
+};
 
 // Create the Recipe Context
 export const RecipeContext = createContext();
@@ -1722,11 +1728,18 @@ const sampleRecipes = [
 // Provider component
 export const RecipeProvider = ({ children }) => {
   // State for recipes
-  const [recipes, setRecipes] = useState(() => {
+  const [recipes, setRecipes] = useState([]);
+  // Load recipes from localStorage or recipes.json
+  useEffect(() => {
     const localData = localStorage.getItem("recipes");
-    // Füge die neuen Rezepte zu den vorhandenen hinzu
-    return localData ? JSON.parse(localData) : sampleRecipes;
-  });
+    if (localData) {
+      setRecipes(JSON.parse(localData));
+    } else {
+      fetchRecipesJson()
+        .then((data) => setRecipes(data))
+        .catch(() => setRecipes([]));
+    }
+  }, []);
 
   // State for meal plan
   const [mealPlan, setMealPlan] = useState(() => {
