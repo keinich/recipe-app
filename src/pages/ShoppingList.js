@@ -25,6 +25,75 @@ const ShoppingList = () => {
       alert(text); // fallback: show text for manual copy
     }
   };
+
+  // Export shopping list to Todoist
+  const exportToTodoist = async () => {
+    // Prompt user for API token
+    const apiToken = prompt(
+      "Bitte gib deinen Todoist API Token ein:\n\n" +
+      "Du findest deinen Token unter: Todoist → Einstellungen → Integrationen → API-Token"
+    );
+
+    if (!apiToken) {
+      alert("Export abgebrochen: Kein API Token eingegeben.");
+      return;
+    }
+
+    try {
+      // Create a new project for the shopping list
+      const projectName = `Einkaufsliste ${new Date().toLocaleDateString('de-DE')}`;
+      const projectResponse = await fetch('https://api.todoist.com/rest/v2/projects', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${apiToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name: projectName }),
+      });
+
+      if (!projectResponse.ok) {
+        throw new Error(`Fehler beim Erstellen des Projekts: ${projectResponse.status}`);
+      }
+
+      const project = await projectResponse.json();
+      const projectId = project.id;
+
+      // Create tasks for each item in the shopping list
+      const tasks = [];
+      Object.keys(itemsByCategory).forEach((category) => {
+        const filteredItems = getFilteredItems(itemsByCategory[category]);
+        filteredItems.forEach((item) => {
+          const taskContent = item.amount
+            ? `${item.name} (${item.amount} ${item.unit || ""})`
+            : item.name;
+          tasks.push({
+            content: taskContent,
+            project_id: projectId,
+            labels: [category],
+          });
+        });
+      });
+
+      // Send all tasks to Todoist
+      const taskPromises = tasks.map(task =>
+        fetch('https://api.todoist.com/rest/v2/tasks', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${apiToken}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(task),
+        })
+      );
+
+      await Promise.all(taskPromises);
+
+      alert(`Einkaufsliste wurde erfolgreich zu Todoist exportiert!\n\nProjekt: "${projectName}"\nAnzahl Aufgaben: ${tasks.length}`);
+    } catch (error) {
+      console.error('Fehler beim Export zu Todoist:', error);
+      alert(`Fehler beim Export zu Todoist: ${error.message}\n\nBitte überprüfe deinen API Token und deine Internetverbindung.`);
+    }
+  };
   const {
     shoppingList,
     toggleShoppingItem,
@@ -94,6 +163,9 @@ const ShoppingList = () => {
               </button>
               <button onClick={exportAsText} className="btn btn-success">
                 Export als Text
+              </button>
+              <button onClick={exportToTodoist} className="btn btn-success">
+                Export zu Todoist
               </button>
             </>
           )}
