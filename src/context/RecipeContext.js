@@ -958,9 +958,9 @@ const sampleRecipes = [
   },
   {
     id: "18",
-    name: "Heringapfelquark KaSa (Kartoffeln + Salat)",
+    name: "Heringapfelquark mit Kartoffeln + Salat",
     description: "Hering mit Apfel-Quark, Kartoffeln und Salat",
-    image: "",
+    image: "https://www.marions-kochbuch.de/rezept-bild/0878.jpg",
     ingredients: [
       {
         name: "Heringsfilet",
@@ -970,7 +970,7 @@ const sampleRecipes = [
       },
       {
         name: "Quark",
-        amount: "250",
+        amount: "500",
         unit: "g",
         category: "Milchprodukte",
       },
@@ -982,71 +982,30 @@ const sampleRecipes = [
       },
       {
         name: "Kartoffeln",
-        amount: "600",
+        amount: "900",
         unit: "g",
         category: "Gemüse",
       },
       {
         name: "Salat gemischt",
-        amount: "200",
-        unit: "g",
-        category: "Gemüse",
-      },
-      {
-        name: "Zwiebeln",
         amount: "1",
         unit: "Stück",
         category: "Gemüse",
       },
-    ],
-    instructions: [],
-    prepTime: 20,
-    cookTime: 25,
-    servings: 4,
-    calories: 420,
-    categories: ["Hauptgericht", "Fisch", "Traditionell"],
-    difficulty: "Einfach",
-    price: "Günstig",
-    taste: "Herzhaft",
-  },
-  {
-    id: "19",
-    name: "Heringsapfelquark KäkaSa",
-    description: "Hering mit Apfel-Quark, Kartoffeln und Salat",
-    image: "",
-    ingredients: [
       {
-        name: "Heringsfilet",
-        amount: "400",
-        unit: "g",
-        category: "Fisch",
+        name: "Zwiebeln",
+        amount: "2",
+        unit: "Stück",
+        category: "Gemüse",
       },
       {
-        name: "Quark",
-        amount: "250",
+        name: "Creme Fraiche",
+        amount: "200",
         unit: "g",
         category: "Milchprodukte",
       },
-      {
-        name: "Äpfel",
-        amount: "2",
-        unit: "Stück",
-        category: "Früchte",
-      },
-      {
-        name: "Kartoffeln",
-        amount: "600",
-        unit: "g",
-        category: "Gemüse",
-      },
-      {
-        name: "Salat gemischt",
-        amount: "200",
-        unit: "g",
-        category: "Gemüse",
-      },
     ],
-    instructions: [],
+    instructions: ["1"],
     prepTime: 20,
     cookTime: 25,
     servings: 4,
@@ -3785,7 +3744,7 @@ const sampleRecipes = [
     cookTime: 0,
     servings: 1,
     calories: 0,
-    difficulty: "Mittel",
+    difficulty: "Einfach",
     price: "Günstig",
     taste: "Herzhaft",
     categories: ["Hauptgericht"],
@@ -3840,7 +3799,7 @@ const sampleRecipes = [
     servings: 1,
     calories: 0,
     difficulty: "Einfach",
-    price: "Günstig",
+    price: "Mittel",
     taste: "Herzhaft",
     categories: ["Hauptgericht"],
     ingredients: [
@@ -4517,10 +4476,11 @@ const sampleRecipes = [
     id: "1767443102710",
   },
   {
-    name: "Lachs Sahne Spinat Tomaten Pfanne",
-    description: "",
+    name: "Italienischer Gnocchiauflauf",
+    description:
+      "https://www.chefkoch.de/rezepte/3323131493468084/Italienischer-Gnocchiauflauf.html",
     image:
-      "https://static.freundin.de/11x0:1789x1000/1800x1013/images/2020-01/lachs-spinat-pfanne-t.jpg",
+      "https://img.chefkoch-cdn.de/rezepte/3323131493468084/bilder/1358950/crop-960x640/italienischer-gnocchiauflauf.jpg",
     prepTime: 0,
     cookTime: 0,
     servings: 1,
@@ -4528,71 +4488,481 @@ const sampleRecipes = [
     difficulty: "Einfach",
     price: "Günstig",
     taste: "Herzhaft",
-    categories: ["Hauptgericht", "Fisch"],
+    categories: ["Hauptgericht", "Italienisch", "Fleisch"],
     ingredients: [
       {
-        name: "Lachs",
-        amount: "650",
+        name: "Gnocchi",
+        amount: "800",
         unit: "g",
-        category: "Fisch",
+        category: "Nudeln",
       },
       {
-        name: "Knoblauch",
-        amount: "5",
-        unit: "Zehen",
+        name: "Zucchini",
+        amount: "2",
+        unit: "Stück",
         category: "Gemüse",
       },
       {
-        name: "Kirschtomaten",
-        amount: "250",
+        name: "Cherrytomaten",
+        amount: "400",
         unit: "g",
         category: "Gemüse",
       },
       {
-        name: "Spinat",
-        amount: "75",
+        name: "Hackfleisch",
+        amount: "1000",
         unit: "g",
-        category: "Gemüse",
+        category: "Fleisch",
+      },
+      {
+        name: "Tomatenmark",
+        amount: "4",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Tomaten, stückige",
+        amount: "2",
+        unit: "Dosen",
+        category: "Konserven",
       },
       {
         name: "Sahne",
-        amount: "225",
-        unit: "g",
-        category: "Milchprodukte",
-      },
-      {
-        name: "Parmesan",
-        amount: "75",
-        unit: "g",
-        category: "Milchprodukte",
-      },
-      {
-        name: "Petersilie",
-        amount: "1",
-        unit: "Stück",
-        category: "Tiefkühl",
-      },
-      {
-        name: "Basilikum",
-        amount: "1",
-        unit: "Stück",
-        category: "Tiefkühl",
-      },
-      {
-        name: "Kartoffeln",
         amount: "500",
-        unit: "g",
-        category: "Gemüse",
+        unit: "ml",
+        category: "Milchprodukte",
       },
       {
-        name: "Feldsalat",
+        name: "Mozarella",
+        amount: "300",
+        unit: "g",
+        category: "Milchprodukte",
+      },
+      {
+        name: "Italienische Kräuter",
         amount: "1",
         unit: "Stück",
-        category: "Gemüse",
+        category: "Tiefkühl",
       },
     ],
     instructions: ["1"],
-    id: "1768153121123",
+    id: "1768906330935",
+  },
+  {
+    name: "Chinesisch gebratene Nudeln mit Hühnchenfleisch, Ei und Gemüse",
+    description:
+      "Hähnchen\nhttps://www.chefkoch.de/rezepte/2848091436834550/Chinesisch-gebratene-Nudeln-mit-Huehnchenfleisch-Ei-und-Gemuese.html",
+    image:
+      "https://img.chefkoch-cdn.de/rezepte/2848091436834550/bilder/1403501/crop-960x640/chinesisch-gebratene-nudeln-mit-huehnchenfleisch-ei-und-gemuese.jpg",
+    prepTime: 0,
+    cookTime: 0,
+    servings: 1,
+    calories: 0,
+    difficulty: "Mittel",
+    price: "Mittel",
+    taste: "Herzhaft",
+    categories: ["Hauptgericht", "Fleisch", "Asiatisch", "Gesund"],
+    ingredients: [
+      {
+        name: "Mie Nudeln",
+        amount: "500",
+        unit: "gramm",
+        category: "Nudeln",
+      },
+      {
+        name: "Eier",
+        amount: "4",
+        unit: "Stück",
+        category: "Eier",
+      },
+      {
+        name: "Karotten",
+        amount: "3",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Erbsen",
+        amount: "50",
+        unit: "g",
+        category: "Tiefkühl",
+      },
+      {
+        name: "Sprossen",
+        amount: "50",
+        unit: "g",
+        category: "Gemüse",
+      },
+      {
+        name: "Zwiebel",
+        amount: "2",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Lauch",
+        amount: "1",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Knoblauch",
+        amount: "4",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Austernsauce",
+        amount: "1",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Hoisin Sauce",
+        amount: "1",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Sojasauce",
+        amount: "3",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Hähnchenfleisch",
+        amount: "800",
+        unit: "g",
+        category: "Fleisch",
+      },
+      {
+        name: "Sesamöl",
+        amount: "1",
+        unit: "Stück",
+        category: "Öle",
+      },
+    ],
+    instructions: ["1"],
+    id: "1768907326510",
+  },
+  {
+    name: "Chinesisch gebratene Nudeln mit gebackenem Hühnchenfleisch, Ei und Gemüse",
+    description: "Hähnchen\nhttps://www.youtube.com/watch?v=SBDAFkaBdEo",
+    image:
+      "https://buddydinner.de/wp-content/uploads/2021/06/IMG_6582-scaled-e1624524905556.jpg",
+    prepTime: 0,
+    cookTime: 0,
+    servings: 1,
+    calories: 0,
+    difficulty: "Schwer",
+    price: "Mittel",
+    taste: "Herzhaft",
+    categories: ["Hauptgericht", "Fleisch", "Asiatisch"],
+    ingredients: [
+      {
+        name: "Mie Nudeln",
+        amount: "500",
+        unit: "g",
+        category: "Nudeln",
+      },
+      {
+        name: "Eier",
+        amount: "3",
+        unit: "Stück",
+        category: "Eier",
+      },
+      {
+        name: "Karotten",
+        amount: "3",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Erbsen",
+        amount: "50",
+        unit: "g",
+        category: "Gemüse",
+      },
+      {
+        name: "Sprossen",
+        amount: "50",
+        unit: "g",
+        category: "Gemüse",
+      },
+      {
+        name: "Zwiebel",
+        amount: "2",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Lauch",
+        amount: "1",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Knoblauch",
+        amount: "4",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Austernsauce",
+        amount: "1",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Hoisin Sauce",
+        amount: "1",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Sojasauce",
+        amount: "3",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Hähnchenfleisch",
+        amount: "800",
+        unit: "g",
+        category: "Fleisch",
+      },
+      {
+        name: "Sesamöl",
+        amount: "1",
+        unit: "Stück",
+        category: "Öle",
+      },
+      {
+        name: "Milch",
+        amount: "150",
+        unit: "ml",
+        category: "Milchprodukte",
+      },
+      {
+        name: "Mehl",
+        amount: "200",
+        unit: "g",
+        category: "Backwaren",
+      },
+      {
+        name: "Stärke",
+        amount: "50",
+        unit: "g",
+        category: "Backwaren",
+      },
+      {
+        name: "Backpulver",
+        amount: "1,5",
+        unit: "TL",
+        category: "Backwaren",
+      },
+      {
+        name: "Neutrales Öl",
+        amount: "1000",
+        unit: "ml",
+        category: "Öle",
+      },
+    ],
+    instructions: ["1"],
+    id: "1768908064908",
+  },
+  {
+    name: "Schweinebraten mit Dunkelbiersoße, Rotkraut und Knödel (2 Tage)",
+    description:
+      "https://www.chefkoch.de/rezepte/1985231321912540/Schweinebraten-mit-Dunkelbiersosse.html",
+    image:
+      "https://img.chefkoch-cdn.de/rezepte/1985231321912540/bilder/901950/crop-960x640/schweinebraten-mit-dunkelbiersosse.jpg",
+    prepTime: 0,
+    cookTime: 0,
+    servings: 1,
+    calories: 0,
+    difficulty: "Einfach",
+    price: "Günstig",
+    taste: "Herzhaft",
+    categories: ["Hauptgericht", "Fleisch", "Deutsch"],
+    ingredients: [
+      {
+        name: "Schweinebraten (Nacken)",
+        amount: "2,6",
+        unit: "kg",
+        category: "Fleisch",
+      },
+      {
+        name: "Zwiebeln",
+        amount: "4",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Karotten",
+        amount: "1",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Sellerie",
+        amount: "100",
+        unit: "g",
+        category: "Gemüse",
+      },
+      {
+        name: "Puderzucker",
+        amount: "1",
+        unit: "TL",
+        category: "Backwaren",
+      },
+      {
+        name: "Tomatenmark",
+        amount: "2",
+        unit: "EL",
+        category: "Saucen",
+      },
+      {
+        name: "Dunkelbier",
+        amount: "500",
+        unit: "ml",
+        category: "Gemüse",
+      },
+      {
+        name: "Majoran",
+        amount: "1",
+        unit: "TL",
+        category: "Gewürze",
+      },
+      {
+        name: "Loorbeerblatt",
+        amount: "1",
+        unit: "Stück",
+        category: "Gewürze",
+      },
+      {
+        name: "Brühe",
+        amount: "1,5",
+        unit: "liter",
+        category: "Gewürze",
+      },
+      {
+        name: "Knoblauch",
+        amount: "3",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Rotkraut",
+        amount: "viel",
+        unit: "stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Äpfel",
+        amount: "3",
+        unit: "Stück",
+        category: "Gemüse",
+      },
+      {
+        name: "Kartoffeln",
+        amount: "2,5",
+        unit: "kg",
+        category: "Gemüse",
+      },
+      {
+        name: "Stärkemehl",
+        amount: "500",
+        unit: "g",
+        category: "Backwaren",
+      },
+      {
+        name: "Eigelb",
+        amount: "5",
+        unit: "Stück",
+        category: "Eier",
+      },
+      {
+        name: "Butter",
+        amount: "5",
+        unit: "EL",
+        category: "Milchprodukte",
+      },
+    ],
+    instructions: ["1"],
+    id: "1768912553709",
+  },
+  {
+    name: "Knäcke mit Schinken und Frischkäse",
+    description: "Zwischensnack",
+    image:
+      "https://images.lecker.de/knackebrot-mit-frischkase-und-lachsschinken,id=554fa28d,b=lecker,w=750,rm=sk.webp",
+    prepTime: 0,
+    cookTime: 0,
+    servings: 1,
+    calories: 0,
+    difficulty: "Einfach",
+    price: "Günstig",
+    taste: "Herzhaft",
+    categories: ["Snack", "Gesund", "Fleisch"],
+    ingredients: [
+      {
+        name: "Knäckebrot",
+        amount: "1",
+        unit: "Pack",
+        category: "Backwaren",
+      },
+      {
+        name: "Hähnchenschinken (fürs Brot)",
+        amount: "3",
+        unit: "Pack",
+        category: "Fleisch",
+      },
+      {
+        name: "Frischkäse",
+        amount: "1",
+        unit: "Pack",
+        category: "Milchprodukte",
+      },
+    ],
+    instructions: ["1"],
+    id: "1768912683345",
+  },
+  {
+    name: "Joghurt Frühstück",
+    description: "",
+    image:
+      "https://www.globus.de/media/globus/rezepte/wochenplaner/fruehstueck/muesli_mit_joghurt_beeren_169.jpg",
+    prepTime: 0,
+    cookTime: 0,
+    servings: 1,
+    calories: 0,
+    difficulty: "Einfach",
+    price: "Günstig",
+    taste: "Herzhaft",
+    categories: ["Frühstück", "Gesund"],
+    ingredients: [
+      {
+        name: "Joghurt",
+        amount: "2",
+        unit: "Gläser",
+        category: "Milchprodukte",
+      },
+      {
+        name: "Schokoflakes",
+        amount: "1",
+        unit: "Pack",
+        category: "Getreide",
+      },
+      {
+        name: " Süßstoff",
+        amount: "1",
+        unit: "Flasche",
+        category: "Backwaren",
+      },
+    ],
+    instructions: ["1"],
+    id: "1768912817327",
   },
 ];
 // Provider component
@@ -4658,7 +5028,7 @@ export const RecipeProvider = ({ children }) => {
     const updatedMealPlan = { ...mealPlan };
     Object.keys(updatedMealPlan).forEach((day) => {
       updatedMealPlan[day] = updatedMealPlan[day].filter(
-        (recipeId) => recipeId !== id
+        (recipeId) => recipeId !== id,
       );
     });
     setMealPlan(updatedMealPlan);
@@ -4668,8 +5038,8 @@ export const RecipeProvider = ({ children }) => {
   const updateRecipe = (id, updatedRecipe) => {
     setRecipes(
       recipes.map((recipe) =>
-        recipe.id === id ? { ...recipe, ...updatedRecipe } : recipe
-      )
+        recipe.id === id ? { ...recipe, ...updatedRecipe } : recipe,
+      ),
     );
   };
 
@@ -4702,7 +5072,7 @@ export const RecipeProvider = ({ children }) => {
           const existingIndex = newShoppingList.findIndex(
             (item) =>
               item.name.toLowerCase() === ingredient.name.toLowerCase() &&
-              item.unit === ingredient.unit
+              item.unit === ingredient.unit,
           );
 
           if (existingIndex >= 0) {
