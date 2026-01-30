@@ -29,10 +29,11 @@ const ShoppingList = () => {
   // Export shopping list to Todoist
   const exportToTodoist = async () => {
     // Prompt user for API token
-    const apiToken = prompt(
-      "Bitte gib deinen Todoist API Token ein:\n\n" +
-      "Du findest deinen Token unter: Todoist → Einstellungen → Integrationen → API-Token"
-    );
+    // const apiToken = prompt(
+    //   "Bitte gib deinen Todoist API Token ein:\n\n" +
+    //   "Du findest deinen Token unter: Todoist → Einstellungen → Integrationen → API-Token"
+    // );
+    const apiToken = "b5e6d8f8c4c0ccfe6723e3f69db9c133b1d572b7";
 
     if (!apiToken) {
       alert("Export abgebrochen: Kein API Token eingegeben.");
@@ -41,18 +42,23 @@ const ShoppingList = () => {
 
     try {
       // Create a new project for the shopping list
-      const projectName = `Einkaufsliste ${new Date().toLocaleDateString('de-DE')}`;
-      const projectResponse = await fetch('https://api.todoist.com/rest/v2/projects', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${apiToken}`,
-          'Content-Type': 'application/json',
+      const projectName = `Einkaufsliste ${new Date().toLocaleDateString("de-DE")}`;
+      const projectResponse = await fetch(
+        "https://api.todoist.com/rest/v2/projects",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiToken}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name: projectName }),
         },
-        body: JSON.stringify({ name: projectName }),
-      });
+      );
 
       if (!projectResponse.ok) {
-        throw new Error(`Fehler beim Erstellen des Projekts: ${projectResponse.status}`);
+        throw new Error(
+          `Fehler beim Erstellen des Projekts: ${projectResponse.status}`,
+        );
       }
 
       const project = await projectResponse.json();
@@ -75,23 +81,27 @@ const ShoppingList = () => {
       });
 
       // Send all tasks to Todoist
-      const taskPromises = tasks.map(task =>
-        fetch('https://api.todoist.com/rest/v2/tasks', {
-          method: 'POST',
+      const taskPromises = tasks.map((task) =>
+        fetch("https://api.todoist.com/rest/v2/tasks", {
+          method: "POST",
           headers: {
-            'Authorization': `Bearer ${apiToken}`,
-            'Content-Type': 'application/json',
+            Authorization: `Bearer ${apiToken}`,
+            "Content-Type": "application/json",
           },
           body: JSON.stringify(task),
-        })
+        }),
       );
 
       await Promise.all(taskPromises);
 
-      alert(`Einkaufsliste wurde erfolgreich zu Todoist exportiert!\n\nProjekt: "${projectName}"\nAnzahl Aufgaben: ${tasks.length}`);
+      alert(
+        `Einkaufsliste wurde erfolgreich zu Todoist exportiert!\n\nProjekt: "${projectName}"\nAnzahl Aufgaben: ${tasks.length}`,
+      );
     } catch (error) {
-      console.error('Fehler beim Export zu Todoist:', error);
-      alert(`Fehler beim Export zu Todoist: ${error.message}\n\nBitte überprüfe deinen API Token und deine Internetverbindung.`);
+      console.error("Fehler beim Export zu Todoist:", error);
+      alert(
+        `Fehler beim Export zu Todoist: ${error.message}\n\nBitte überprüfe deinen API Token und deine Internetverbindung.`,
+      );
     }
   };
   const {
@@ -226,7 +236,7 @@ const ShoppingList = () => {
                 <p>
                   <strong>Artikel pro Kategorie:</strong>{" "}
                   {Math.round(
-                    shoppingList.length / Object.keys(itemsByCategory).length
+                    shoppingList.length / Object.keys(itemsByCategory).length,
                   )}
                 </p>
               </div>
@@ -267,7 +277,7 @@ const ShoppingList = () => {
                     (i) =>
                       i.name === item.name &&
                       i.unit === item.unit &&
-                      i.amount === item.amount
+                      i.amount === item.amount,
                   );
 
                   return (
