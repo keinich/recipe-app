@@ -33,7 +33,7 @@ const ShoppingList = () => {
     //   "Bitte gib deinen Todoist API Token ein:\n\n" +
     //   "Du findest deinen Token unter: Todoist → Einstellungen → Integrationen → API-Token"
     // );
-    const apiToken = "b5e6d8f8c4c0ccfe6723e3f69db9c133b1d572b7";
+    const apiToken = "2ffd0187e353555a50c83507af15d6c15e09cca2";
 
     if (!apiToken) {
       alert("Export abgebrochen: Kein API Token eingegeben.");
@@ -44,7 +44,7 @@ const ShoppingList = () => {
       // Create a new project for the shopping list
       const projectName = `Einkaufsliste ${new Date().toLocaleDateString("de-DE")}`;
       const projectResponse = await fetch(
-        "https://api.todoist.com/rest/v2/projects",
+        "https://api.todoist.com/api/v1/projects",
         {
           method: "POST",
           headers: {
@@ -82,7 +82,7 @@ const ShoppingList = () => {
 
       // Send all tasks to Todoist
       const taskPromises = tasks.map((task) =>
-        fetch("https://api.todoist.com/rest/v2/tasks", {
+        fetch("https://api.todoist.com/api/v1/tasks", {
           method: "POST",
           headers: {
             Authorization: `Bearer ${apiToken}`,
